@@ -1,0 +1,37 @@
+{
+    "name": "sqdbg-profiler-vs",
+    "displayName": "Squirrel Profiler",
+    "description": "Simple UI for sqdbg profiler in OpenTTD (start/stop/pause/resume/update)",
+    "version": "0.1.0",
+    "publisher": "pasasap",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+        "repository": {
+        "type": "git",
+        "url": "https://github.com/PaSaSaP/sqdbg-profiler-vs"
+    },
+    "activationEvents": [
+        "onCommand:sqdbg-profiler-vs.openPanel"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "sqdbg-profiler-vs.openPanel",
+                "title": "Open Squirrel Profiler"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "echo 'Nothing to compile'"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.37"
+    },
+    "dependencies": {
+    }
+}
